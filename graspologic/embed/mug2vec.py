@@ -153,6 +153,7 @@ class mug2vec(BaseEstimator):
             n_components=self.omnibus_components,
             n_elbows=self.omnibus_n_elbows,
             svd_seed=self.svd_seed,
+            concat=True,
         )
         omnibus_embedding = omni.fit_transform(graphs)
 
